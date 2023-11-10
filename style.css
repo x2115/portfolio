@@ -1,0 +1,203 @@
+html{
+	background-color: #4f3e6a;
+}
+
+body{
+	background-color: #1d1a34;
+	color: #f8ebcb;
+	max-width: 1000px;
+	margin: auto;
+	font-family: 'Rubik', sans-serif;
+	height:100%;
+}
+
+header{
+	background-color:#020c2f;
+	width: 100%;
+}
+
+footer{
+	background-color:#020c2f;
+	width: 100%;
+	
+}
+h1{
+	font-size:80px;
+	text-align:center;
+	padding:0px;
+	margin:5px;
+}
+h2{
+	font-size:50px;
+	text-align:center;
+	padding:0px;
+	margin:5px;
+}
+h3{
+	padding:0px;
+	margin:5px;
+	font-size:30px;
+	text-align:center;
+}
+h4{
+	padding:0px;
+	margin:5px;
+	font-size:15px;
+	text-align:center;
+}
+
+
+
+.overvideo{
+	position:absolute;
+	width:100%;
+	top:0px;
+	left:-5px;
+	margin-top:0px;
+	text-shadow: 2px 2px #b0923a;
+	background-image: linear-gradient(rgba(0,0,0,255),rgba(0,0,0,0));
+}
+.mainvideo{
+	min-width: 100%; 
+	max-width: 100%;
+	left:0;
+}
+
+.grid{
+	display: grid;
+	column-gap: 10px;
+	row-gap: 10px;
+	grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+
+.projectfeature{
+	background-color: transparent;
+	  width: 320px;
+	  height: 320px;
+	  margin: auto;
+	  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+.featureinner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.4s;
+  transform-style: preserve-3d;
+}
+
+.projectfeature:hover .featureinner {
+  transform: rotateY(180deg);
+}
+
+.featurefront, .featureback {
+  position: absolute;
+  top:0;
+  left:0;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  background-color:#020c2f;
+}
+
+.featureoverimage{
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+}
+
+.featuretitle{
+	background-image: linear-gradient(rgba(0,0,0,255) 50%,rgba(0,0,0,0));
+	position:absolute;
+	padding-top:5px;
+	left:-5px;
+	top:-5px;
+	width:100%;
+}
+
+.obscure{
+	background-color: rgba(0,0,0,0.6);
+}
+
+.featurecontent{
+	padding:5px;
+}
+
+.featureback{
+	transform: rotateY(180deg);
+}
+
+.content{
+	padding:10px;
+}
+
+.videoheader{
+	max-width: 960px;
+	max-height: 540px;
+	position:relative;
+	margin:auto;
+}
+
+a:link{
+	color: #c5aa5b;	
+	text-decoration: none;
+}
+
+a:visited{
+	color: #c9b7e6;	
+	text-decoration: none;
+}
+
+a:hover{
+	color: #b0923a;	
+	text-decoration: underline;
+}
+a:active{
+	color: #b0923a;	
+	text-decoration: underline;
+}
+button{
+	cursor:pointer;
+	background-color: #4f3e6a;
+	border:none;
+	color:white;
+	padding:10px;
+	font-weight:bold;
+}
+button:hover{
+	background-color:#b0923a;
+	color:#020c2f;
+}
+
+button.header{
+	width:150px;
+}
+
+button.project{
+	width:100%;
+	position:absolute;
+	bottom:0px;
+	left:0px;
+}
+.devstatus{
+	color:#c9b7e6;	
+}
+
+.headertable{
+	width:100%;
+	table-layout: fixed;
+}
+
+button.section_button{
+	width:600px;
+}
+
+button.header.selected{
+	background-color:#b0923a;
+	color:#020c2f;
+	cursor:default;
+}
